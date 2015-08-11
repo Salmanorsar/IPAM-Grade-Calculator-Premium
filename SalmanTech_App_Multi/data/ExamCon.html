@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head><title>Exam | Continuous</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="../js/jquery.js" ></script>
+<script src="../js/jquery.mobile.js" ></script>
+<script src="../js/scriptfile.js" ></script>
+<script src="../js/respond.min.js" ></script>
+
+<link rel="stylesheet" href="../css/jquery.mobile.theme.css">
+<link rel="stylesheet" href="../css/boilerplate.css">
+<link rel="stylesheet" href="../css/Style.css"  >
+<link rel="stylesheet" href="../css/jquery.mobile.structure.css">
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<style type="text/css">
+a:visited {
+	text-decoration: none;
+}
+</style>
+
+</head>
+
+<body>
+	<!--Exams Continuous Window-->
+  		<div class="gridContainer clearfix" id="ExamCon" data-role="page" data-theme="b">
+  			<div id="FixedHeader">
+			<span class="headerColor">SalmanTech | Exams Continuous Grade Calculator</span>
+			
+			<div data-role="controlgroup" data-type="horizontal" id="ButtonSize">				
+				<a href="../index.html" data-role="button" data-icon="home" id="Home" 
+				data-prefetch data-ajax="false">Home</a>
+				<a href="#" data-role="button" data-icon="back" id="Back" 
+				data-prefetch data-ajax="false" data-rel="back">Back</a>
+				<a href="About.html" data-role="button" data-icon="forward" 
+				data-prefetch data-ajax="false"><span id="NextWin">Next</span></a>				
+			</div>
+		</div>
+		
+		<div data-role="content" id="OrganiseContent">
+			
+			<hr class="ui-btn-hover-c">
+			<div>
+			<table class="ui-btn-hover-c">
+				<tbody>
+					<tr id="CtrlBtns">
+						<th>Exams</th>
+						
+						<th>Continuous</th>
+						
+						<th>Total Grade</th>
+					</tr>
+					
+					<tr>
+						<td><input id="Ex1" maxlength="5"></td>
+						
+						<td><input id="Con1" maxlength="5"></td>
+						
+						<td><input id="TG1" readonly="true" ></td>
+
+					</tr>
+					
+					<tr>
+						<td><input id="Ex2" maxlength="5"></td>
+						
+						<td><input id="Con2" maxlength="5"></td>
+						
+						<td><input id="TG2" readonly="true"></td>
+					</tr>
+					
+					<tr>
+						<td><input id="Ex3" maxlength="5"></td>
+						
+						<td><input id="Con3" maxlength="5"></td>
+						
+						<td><input id="TG3" readonly="true"></td>
+					</tr>
+					
+					<tr>
+						<td><input id="Ex4" maxlength="5"></td>
+						
+						<td><input id="Con4" maxlength="5"></td>
+						
+						<td><input id="TG4" readonly="true"></td>
+					</tr>
+					
+					<tr>
+						<td><input id="Ex5" maxlength="5"></td>
+						
+						<td><input id="Con5" maxlength="5"></td>
+						
+						<td><input id="TG5" readonly="true"></td>
+					</tr>
+					
+					<tr>
+						<td><input id="Ex6" maxlength="5"></td>
+						
+						<td><input id="Con6" maxlength="5"></td>
+						
+						<td><input id="TG6" readonly="true"></td>
+					</tr>
+
+				</tbody>
+			</table>
+			</div>
+			
+			<hr class="ui-btn-hover-c">
+			
+			<div>
+				<table class="ui-btn-hover-c">
+					<tbody>
+						<tr>
+							<td id="ECCtrlBtns">
+								<button id="ECCalBtn">Calculate</button>
+								<button id="examClear">Clear</button>
+								<button id="ECSave">Save</button>
+								<button id="ECRetrieve">Retrieve</button>
+							</td>
+							
+							<td>
+							<form method="post" action="">
+								<label for="TextComment"><span id="textctrl">Comment:</span></label>
+								<textarea type="text" rows="3" cols="20" lang="en-us" 
+								id="TextComment" readonly="true" wrap="hard" title="Comment"></textarea>
+							</form>
+								
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
+			<hr class="ui-btn-hover-c">
+			
+		<div id="ButtonSize" align="center">
+				You may launch the Complete Grade Calculator by clicking this
+				<table>
+					<tbody>
+						<tr>
+							<td><a href="FullExCon.html" data-role="button" id="FullExCon" 
+							data-rel="dialog" data-prefetch data-inline="true" data-ajax="false">
+				<span id="Home">Complete Exam Continuous Grade Calculator</span></a></td>
+						</tr>
+					</tbody>
+				</table>
+				
+		</div>			
+		</div>
+  	</div> <!--Exam Continuous Window ends-->
+</body>
+
+</html>

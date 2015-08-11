@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns		= "http://www.w3.org/ns/widgets"
+		xm3lns:gap	= "http://phonegap.com/ns/1.0"
+		id			= "com.salmantech.gradepointcalculator"
+		version		= "1.0.0">
+
+		<name>Ipam Grade Calculator</name>
+
+		<description>
+			This program is design to help you calculate your grades
+		</description>
+
+		<author href="http://www.salmantech.com" email="salmanorsar2009@yahoo.com">
+			SalmanTech
+		</author>
+
+		<preference name="permissions" value="none" />
+
+		<icon src=""	gap:platform="android"	gap:qualifier="" />
+		<icon src=""	gap:platform="android"	gap:qualifier="" />
+		<icon src=""	gap:platform="android"	gap:qualifier="" />
+		<icon src=""	gap:platform="android"	gap:qualifier="" />
+		<icon src=""	gap:platform="android"	gap:qualifier="" />
+
+		<icon src="" 	gap:platform="ios" 	width=""	height=""	/>
+		<icon src="" 	gap:platform="ios" 	width=""	height=""	/>
+		<icon src="" 	gap:platform="ios" 	width=""	height=""	/>
+		<icon src="" 	gap:platform="ios" 	width=""	height=""	/>
+</widget>

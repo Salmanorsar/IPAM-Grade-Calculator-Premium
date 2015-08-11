@@ -1,0 +1,139 @@
+<!doctype html>
+
+<html class="">
+<!--<![endif]-->
+<head><title>SalmanTech Home</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="js/jquery.js" ></script>
+<script src="js/jquery.mobile.js" ></script>
+<script src="js/scriptfile.js" ></script>
+<script src="js/respond.min.js" ></script>
+
+<link rel="stylesheet" href="css/jquery.mobile.theme.css">
+<link rel="stylesheet" href="css/boilerplate.css">
+<link rel="stylesheet" href="css/Style.css"  >
+<link rel="stylesheet" href="css/jquery.mobile.structure.css">
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<style type="text/css">
+a:visited {
+	text-decoration: none;
+}
+</style>
+
+</head>
+<body>
+	
+	<!--Home Window-->
+	<div class="gridContainer clearfix" id="Home" data-role="page" data-theme="b">
+	
+		<div id="FixedHeader">
+			<span class="headerColor">SalmanTech | Grade Point Calculator</span>
+									
+  			
+  			<div data-role="controlgroup" data-type="horizontal"  id="ButtonSize" >
+  				<a href="data/Cumulated.html" data-role="button" id="CumSizebtn" data-icon="cumu"
+  				data-prefetch data-ajax="false">Cumulated</a>
+  				<a href="data/ExamCon.html" data-role="button" id="ExSizebtn" data-icon="excon"
+  				 data-prefetch data-ajax="false">Exams | Continuous</a>
+  				<a href="data/About.html" data-role="button" id="AboutSizebtn" data-icon=""
+  				 data-prefetch data-ajax="false">About</a>
+  			</div >
+  		</div>
+  		
+  		<div data-role="content" id="OrganiseContent">
+		
+  		<hr class="ui-btn-hover-c">
+  		 		
+  		<div id="Logo-Text" data-role="table">
+  		<table class="ui-btn-hover-c">
+  			<tbody>
+  				<tr>
+  					<td><img src="res/IpamLogo.jpg" alt="Ipam Logo" class="Logo"></td>
+  					<td class="LogoText">INSTITUTE OF PUBLIC ADMINISTRATION AND MANAGEMENT<br>(IPAM - USL)</td>
+  				</tr>
+  			</tbody>
+  		</table>
+  		</div>
+  		
+  		<hr class="ui-btn-hover-c">
+  		
+  		<div id="GradeInput" data-role="panel">
+  			<table>
+  				<tbody>
+  					<tr>
+  						<td class="formatGrade" colspan="6">
+						<span class="formatGrade">
+  						Enter your grades below and click on calculate</span></td>
+  					</tr>
+  						
+					<tr>
+						<td><input  class="InputBox" id="InputBox1"></td>
+						<td><input  class="InputBox" id="InputBox2"></td>
+						<td><input  class="InputBox" id="InputBox3"></td>
+						<td><input  class="InputBox" id="InputBox4"></td>
+						<td><input  class="InputBox" id="InputBox5"></td>
+						<td><input  class="InputBox" id="InputBox6"></td>
+					</tr>
+				</tbody>
+			</table>
+
+  		</div>
+  		
+  		<hr class="ui-btn-hover-c">
+  		
+  		<div id="GradeDisplay" >
+			<table class="ui-btn-hover-c">
+			   <tbody>
+				<tr>
+					<td id="CtrlBtns">
+						<button name="Calculate" id="CalBtn">Calculate</button>
+						<button id="Reset">Clear</button>
+						<button name="Save" id="HomeSave">Save</button>
+						<button name="Exit" id="HomeRetrieve">Retrieve</button>
+					</td>
+					
+					<td>
+						<table class="ui-btn-hover-b">
+							<tr>
+								<td><input id="GradeOne" value="" readonly="readonly"></td>
+							</tr>
+							
+							<tr>
+								<td><input id="GradeTwo" value="" readonly="readonly"></td>
+							</tr>
+							
+							<tr>
+								<td><input id="GradeThree" value="" readonly="readonly"></td>
+							</tr>
+							
+							<tr>
+								<td><input id="GradeFour" value="" readonly="readonly"></td>
+							</tr>
+							
+							<tr>
+								<td><input id="GradeFive" value="" readonly="readonly"></td>
+							</tr>
+							
+							<tr>
+								<td><input id="GradeSix" value="" readonly="readonly"></td>
+							</tr>
+							
+							<tr>
+								<td><input id="AverageGP" value="" readonly="readonly"></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			   </tbody>
+			</table>
+		</div>
+	</div> <!--Content Section Ends here-->
+    </div> <!--Home Window ends-->
+ </body>
+</html>

@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head><title>Cumulated Grade Calculator</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="../js/jquery.js" ></script>
+<script src="../js/jquery.mobile.js" ></script>
+<script src="../js/respond.min.js" ></script>
+<script src="../js/scriptfile.js"></script>
+
+<link rel="stylesheet" href="../css/Style.css" >
+<link rel="stylesheet" href="../css/jquery.mobile.structure.css">
+<link rel="stylesheet" href="../css/jquery.mobile.theme.css">
+<link rel="stylesheet" href="../css/boilerplate.css">
+
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+	<!--Cumulated Window-->
+  		<div class="gridContainer clearfix" id="Cumulated" data-role="page" data-theme="b">
+  			<div id="FixedHeader">
+				<span class="headerColor">SalmanTech | Cumulated Grade Point Calculator</span>
+			
+			<div data-role="controlgroup" data-type="horizontal" id="ButtonSize">				
+				<a href="../index.html" data-role="button" id="Home" data-icon="home"
+				 data-prefetch data-ajax="false">Home</a>
+				<a href="#" data-role="button" id="Back" data-icon="back"
+				 data-prefetch data-ajax="false" data-rel="back">Back</a>
+				<a href="ExamCon.html" data-role="button" data-icon="forward" 
+				data-prefetch data-ajax="false"><span id="NextWin">Next</span></a>				
+			</div>
+		</div>
+		
+		<div data-role="content" id="OrganiseContent">
+		
+		<hr class="ui-btn-hover-c">		
+		
+		<a href="" id="EnterDetails" data-role="button" data-icon="arrow-d" data-iconpos="right">
+		<span id="textctrl" >Enter Details</span></a>
+		
+		<table width="100%" class="ui-btn-hover-c">
+			<tr id="CtrlBtns">
+				
+				<td>
+					<table id="CtrlDetails" class="ui-btn-hover-c">
+						<tbody >
+						
+							<tr>
+								<td><label for="Name" id="ButtonSize">Name:</label></td>
+								<td><input id="Name" value=""></td>
+							</tr>
+							
+							<tr>
+								<td><label for="IdNo" id="ButtonSize">Reg. No:</label></td>
+								<td><input id="IdNo" value=""></td>
+							</tr>
+							
+							<tr>
+								<td><label for="CurrentYr" id="ButtonSize">Year:</label></td>
+								<td><input id="CurrentYr"></td>
+							</tr>
+
+							<tr id="DepartmentTD">
+								<td ><label for="Depart" id="ButtonSize">Department:</label></td>
+								<td ><select id="Depart" name="Departmanet">
+										<option value="Applied Accounting">Applied Accounting</option>
+										<option value="Information Systems">Information Systems</option>
+										<option value="Business Administration">Business Administration</option>
+										<option value="Public Sector Management">Public Sector Management</option>
+										<option value="Financial Services">Financial Services</option>
+										<option value="SpecifyDept">--Specify department</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td class="ctrlDept"><label for="EnterDepart" id="ButtonSize">Department:</label></td>
+								<td><input id="EnterDepart"></td>
+							</tr>
+						</tbody>
+					</table>
+				</td>				
+			</tr>		
+		</table>
+		
+		<hr class="ui-btn-hover-c">
+		
+		<table class="ui-btn-hover-c" width="55%">
+			<tbody>
+				<tr>
+					<td><span id="CumuPoint">Number of Year(s) to Cumulate</span></td>
+				</tr>
+				
+				<tr>
+					<td>
+						<div data-role="fieldcontainer" id="ButtonSize">
+							<button id="Cumulate1yr" >One Year</button>
+							<button id="Cumulate2yr" >Two Years</button>
+							<button id="Cumulate3yr" >Three Years</button>
+							<button id="Cumulate4yr" >Four Years</button>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<hr class="ui-btn-hover-c">
+			
+		<div id="YearCumulation">
+						
+			<div id="Cumulateyr">
+				<table id="GradeDisplay" class="ui-btn-hover-c">
+					<tbody>
+						<tr><td colspan="2" id="NumberOfYears">Four Years Cumulation</td></tr>
+						<tr>
+							<td id="CumuCtrlBtns">
+								<button id="cumuCalBtn">Calculate</button>
+								<button id="CumuClearBtn">Clear</button>
+								<button id="CumuSave">Save</button>
+								<button id="CumuRetrieve">Retrieve</button>
+							</td>
+										
+							<td>
+								<table class="ui-btn-hover-d">
+									<tr id="Firstrow">
+										<td><label for="CumuInputBox1" id="ButtonSize">
+										<span id="YearOne">Year One AGP</span></label></td>
+										<td><input id="CumuInputBox1"></td>
+									</tr>
+									
+									<tr id="Secondrow">
+										<td><label for="CumuInputBox2" id="ButtonSize">
+										<span id="YearTwo">Year Two AGP</span></label></td>
+										<td><input id="CumuInputBox2"></td>			
+									</tr>
+									
+									<tr id="Thirdrow">
+										<td><label for="CumuInputBox3" id="ButtonSize">
+										<span id="YearThree">Year Three AGP</span></label></td>
+										<td><input id="CumuInputBox3"></td>			
+									</tr>
+									
+									<tr id="Fourthrow">
+									<td><label for="CumuInputBox4" id="ButtonSize">
+										<span id="YearFour">Year Four AGP</span></label></td>
+										<td><input id="CumuInputBox4"></td>				
+									</tr>
+
+									<tr>
+										<td><label for="TotalAGP" id="ButtonSize">Total AGP</label></td>
+										<td><input id="TotalAGP" readonly="readonly"></td>
+									</tr>
+									
+									<tr>
+										<td><label for="SemesterAGP" id="ButtonSize">Cumulated AGP</label></td>
+										<td><input id="SemesterAGP" readonly="readonly"></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+	
+				</div> <!--End of yearly cumulation-->
+			</div>
+		</div> 	  		
+  	</div> <!--End of Cumulated Window-->
+</body>
+
+</html>
